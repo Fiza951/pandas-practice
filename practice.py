@@ -302,3 +302,18 @@ print(series.index)
 print(series.values)
 
 #output
+#0      rauf
+#1    rehman
+#2    rashid
+#3     hanif
+#Name: dictionary, dtype: object
+#dictionary
+#(4,)
+#1
+#Index([0, 1, 2, 3], dtype='int64')
+#False
+#4
+#Index([0, 1, 2, 3], dtype='int64')
+#['rauf' 'rehman' 'rashid' 'hanif']
+
+
