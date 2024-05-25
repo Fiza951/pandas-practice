@@ -317,3 +317,67 @@ print(series.values)
 #['rauf' 'rehman' 'rashid' 'hanif']
 
 
+
+
+#  Changing index of a series object
+
+list10=['maaz','irfan','sohail','rayyan','ahmed']
+Ser10 = pd.Series(data=list10)
+print(Ser10)
+print(Ser10.index)
+#output
+#0      maaz  
+#1     irfan  
+#2    sohail  
+#3    rayyan  
+#4     ahmed  
+#dtype: object
+#RangeIndex(start=0, stop=5, step=1)
+
+# first method to change index 
+arr1 = np.random.randint(100,200,size=5)
+Ser10.index = arr1
+print(Ser10)
+print(Ser10.index)
+# output
+#150      maaz
+#193     irfan
+#151    sohail
+#121    rayyan
+#115     ahmed
+#dtype: object
+#Index([150, 193, 151, 121, 115], dtype='int32')
+
+# Second Method of changing index with floats
+new_index =[1,4,6.0,7,4]
+Ser10.index = new_index
+print(Ser10)
+print(Ser10.index)
+
+#output
+#1.0      maaz
+#4.0     irfan
+#6.0    sohail
+#7.0    rayyan
+#4.0     ahmed
+#dtype: object
+#Index([1.0, 4.0, 6.0, 7.0, 4.0], dtype='float64')
+
+
+#with integers
+new_index1 =[1,4,6,7,4]
+Ser10.index = new_index1
+print(Ser10)
+print(Ser10.index)
+# out put
+#1      maaz
+#4     irfan
+#6    sohail
+#7    rayyan
+#4     ahmed
+#dtype: object
+#Index([1, 4, 6, 7, 4], dtype='int64')
+
+
+
+
